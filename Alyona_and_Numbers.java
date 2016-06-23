@@ -79,8 +79,9 @@ public class answer2 {
 			int modval=i%5;
 			sortmod2(modval);
 		}
+	
 		
-		int pairs= (firstcount0*secondcount0)+(firstcount1*secondcount4)+(firstcount2*secondcount3)+(firstcount3*secondcount2)+(firstcount4*secondcount1);
+		long pairs= (firstcount0*Long.parseLong(String.valueOf(secondcount0)))+(firstcount1*Long.parseLong(String.valueOf(secondcount4)))+(firstcount2*Long.parseLong(String.valueOf(secondcount3)))+(firstcount3*Long.parseLong(String.valueOf(secondcount2)))+(firstcount4*Long.parseLong(String.valueOf(secondcount1)));
 		
 		// print number of pairs
 		System.out.println(pairs);
