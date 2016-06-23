@@ -2,22 +2,16 @@ import java.util.Scanner;
 
 public class answer {
 
-	public static String[] input() {
-		// input number
-
+	public static void main (String[] args){
+		
 		Scanner sc= new Scanner(System.in);
 		String input= sc.nextLine();
 		sc.close();
 
+		
 		// split input
 		String[] columns=input.split(" ");
 
-		return columns;
-	}
-
-	public static void process(String[] columns){
-
-		// set columns
 		int n=Integer.parseInt(columns[0]);
 		int m= Integer.parseInt(columns[1]);	
 
@@ -33,12 +27,4 @@ public class answer {
 		// print number of pairs
 		System.out.println(pairs);
 	}
-
-	public static void main (String[] args){
-
-		String[] inputval=input();
-		process(inputval);
-
-	}
-
 }
