@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class answer {
+public class answer2 {
 
 	static Long result=0L;
 
@@ -17,7 +17,7 @@ public class answer {
 	}
 
 	public static void process(String[] input){
-
+		
 		Long n= Long.parseLong(input[0]);
 		Long k= Long.parseLong(input[1]);
 		Long i= k;
@@ -29,20 +29,34 @@ public class answer {
 				result=k;
 			}
 
-			else{
+			else if ((k*1000000)>n){
 				while (result<=n){	
 					result=i*count;
 					count++;
 				}
 			}
+			else{
+				result=n+1;
+				while(result>n){
+					if(result%k==0){
+						break;
+					}
+					else{
+						result++;
+					}
+				}
+			}
 		}
 		System.out.println(result);
+		
+
 	}
 
 	public static void main(String[] args){
 
 		String[] inputval=input();
 		process(inputval);
+
 
 	}
 }
