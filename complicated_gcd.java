@@ -11,8 +11,9 @@ public class answer {
 		String a= input[0];
 		String b= input[1];
 		
+		
 		//if strings are the same then the gcd is itself
-		if (a==b){
+		if (a.equals(b)){
 			System.out.println(a);
 		}
 		
