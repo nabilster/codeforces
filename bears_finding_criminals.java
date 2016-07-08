@@ -71,17 +71,16 @@ public class answer2 {
 		}
 
 		int counter=0;
+		int at= Integer.parseInt(cities[cityliving-1]);
 
-
-		if (offset==0){
+		if (offset==0 && at==1 && numberofcities!=1 ){
 			counter++;
 		}
 
-		int at= Integer.parseInt(cities[cityliving-1]);
 		if (at==1){
 			counter++;
 		}
-
+		
 		for (int i=1; i<=offset;i++){
 			int above=Integer.parseInt(cities[(cityliving-1)+i]);
 			int below=Integer.parseInt(cities[(cityliving-1)-i]);
